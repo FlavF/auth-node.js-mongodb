@@ -1,0 +1,30 @@
+{
+  "name": "exit",
+  "version": "1.0.0",
+  "description": "1. [General Info](#general-info) 2. [Stacks](#stacks) 3. [Installation](#installation) 4. [Pages](#pages) 5. [Database](#database) 6. [Use](#use) 7. [TODO](#todo) 8. [FAQs](#faqs)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config src/index.js"
+  },
+  "author": "Flavia Fontaine",
+  "license": "ISC",
+  "keywords": [
+    "login",
+    "logout",
+    "signin"
+  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs-lint": "^1.2.2",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.6",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
