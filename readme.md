@@ -93,20 +93,23 @@ $ nodemon src/app.js
 
 - HomePage : Authentification - Log in
 
-=> show by default log in page
+=> show by default log in & sign in page
 
-- Page 1 - Sign in
+        - user, password, sign in button
+        
+        - user, password, log in button
 
-=> user, password, sing in button
 => Restrict password ?
 
-- Page 2 - Log in
+=> show errors
 
-=> user, password Log in button
+- Page 1 - Log in
 
-- Page 3 - Log out
+=> Log in sucessfull !!!
 
-=> if log out sent to a page with writing Log out
+- Page 2 - Log out
+
+=> log out successfull !!!
 
 
 #### *Folders to update*
@@ -150,7 +153,10 @@ To sign in, log in , log out
 - [X] Function for sign in
 - [X] Function for log in
 - [X] Function for log out
-- [ ] Made one page for logg in and sign in
+- [X] One page for log in and sign in 
+- [ ] Look for sign in working (code to check)
+- [ ] Look for log in working (code to check)
+- [ ] Look for log out working (code to check)
 - [ ] CSS
 
  

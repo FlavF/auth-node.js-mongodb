@@ -1,4 +1,19 @@
 <%- include('../partials/header') -%>
+
+<h2>Logg in</h2>
+
+<form action="/loggin" method="POST">
+    <label for="email">Email</label>
+    <input type="email" name="Email">
+
+    <label for="password">Password</label>
+    <input type="password" name="password">
+
+    <button>Log in</button>
+</form>
+
+
+<h2>Sign in</h2>
 <form action="/signin" method="POST">
     <label for="email">Email</label>
     <input type="email" name="Email">
@@ -8,4 +23,7 @@
 
     <button>Sign in</button>
 </form>
+
+
+
 <%- include('../partials/footer') -%>

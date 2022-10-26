@@ -12,7 +12,7 @@ require("./db/db");
 const app = express();
 
 //? Get Controllers
-const errorController = require("./controllers/error")
+// const errorController = require("./controllers/error")
 
 //? Get Routers
 const homeRouter = require("./routes/homeRoute");
@@ -36,6 +36,6 @@ app.use(express.urlencoded({ extended: true })); // parsing incoming
 
 //?Call Routers
 app.use(homeRouter);
-app.use(errorController.getError404);
+//app.use(errorController.getError404);
 
 module.exports = app;

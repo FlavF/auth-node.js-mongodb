@@ -8,26 +8,21 @@ const router = new express.Router();
 const auth = require("../middleware/auth");
 
 //?? ROUTERS USERS
-//** Homepage  = Log in */
-//? Show page log in
+//** Homepage  = Log in & sign in */
+//? Show page homePage
 router.get("/", userController.getHomepage)
 
-//? Authentification
-router.post("/", userController.checkAuth);
-
 //** Sign in */
-//?Show page sign in
-router.get("/signin", userController.getSignIn);
-
 //?Create a new user
 router.post("/signin", userController.createNewUser);
+
+//** Log in */
+//? Authentification
+router.post("/login", userController.checkAuth);
 
 //** Log out */
 //? To log out if log in on different pc
 router.post("/logout", auth, userController.logOut);
-
-//? Log all out
-router.post("/logoutAll", auth, userController.logAllOut);
 
 
 module.exports = router;
