@@ -20,19 +20,19 @@ In english.
 
 ### Stacks
 ---
-- [Node.js](https://nodejs.org/en/): Version 18.2.0
-- [Express](https://expressjs.com/): Version 4.18.1
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
 
 Modules/librairies : 
-- [body-parser](https://www.npmjs.com/package/body-parser): Version 1.20.0 
-- [cors](https://www.npmjs.com/package/cors): Version 2.8.5
-- [dotenv](https://www.npmjs.com/package/dotenv): Version 16.0.1
-- [ejs-lint](https://www.npmjs.com/package/ejs-lint): Version 1.2.2
-- [nodemon](https://www.npmjs.com/package/nodemon): Version 2.0.19
-- [mongoose](https://www.npmjs.com/package/mongoose): Version 
-- [validator](https://www.npmjs.com/package/validator): Version 
-- [bcrypt](https://www.npmjs.com/package/bcryptjs): Version 
-- [jwt](https://www.npmjs.com/package/jsonwebtoken): Version 
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [cors](https://www.npmjs.com/package/cors)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [ejs-lint](https://www.npmjs.com/package/ejs-lint)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [mongoose](https://www.npmjs.com/package/mongoose)
+- [validator](https://www.npmjs.com/package/validator)
+- [bcrypt](https://www.npmjs.com/package/bcryptjs)
+- [jwt](https://www.npmjs.com/package/jsonwebtoken)
 
 
 <br/>
@@ -46,7 +46,7 @@ If not install, check : https://nodejs.org/en/
 - Clone :
 
 ```
-$ git clone https://github.com/FlavF/
+$ git clone https://github.com/FlavF/auth-node.js-mongodb
 ```
 
 or
@@ -87,22 +87,24 @@ $ nodemon src/app.js
 
 ### Pages
 ---
-Nav : Sign in / Log in / Log out buttons
+- Nav : Sign in / Log in / Log out buttons
 
 => send to page 1, 2, 3
 
-HomePage : Authentification
+- HomePage : Authentification - Log in
 
 => show by default log in page
 
-Page 1 - Sign in
-=> user, password, re-password, sing in button
+- Page 1 - Sign in
+
+=> user, password, sing in button
 => Restrict password ?
 
-Page 2 - Log in
-user, password Log in button
+- Page 2 - Log in
 
-Page 3 - Log out
+=> user, password Log in button
+
+- Page 3 - Log out
 
 => if log out sent to a page with writing Log out
 
@@ -110,22 +112,32 @@ Page 3 - Log out
 #### *Folders to update*
 - .env : (/.env)
 
+#PAGE src/index.js
+
+PORT = 
+
+#database MongoDB src/db/db.js
+
+MONGODB_URL=
+
+#Token src/models/user.js & src/middelware/auth.js
+
+JWT_SECRET=
 
 
 <br/>
 
 ### Database
 ---
-![Image text](/)
+MongoDB inside the collection an user as :
 
-
+user : email, password, token
 
 
 <br/>
 
 ### Use
 ---
-
 To sign in, log in , log out 
 
 <br/>
@@ -135,14 +147,12 @@ To sign in, log in , log out
 
 - [X] Create pages and routers
 - [X] Create database mongoDB
-- [ ] Function for sign in
-- [ ] Function for log in
-- [ ] Function for log out
+- [X] Function for sign in
+- [X] Function for log in
+- [X] Function for log out
 - [ ] Made one page for logg in and sign in
 - [ ] CSS
-- [ ] 
-- [ ] 
-- [ ] 
+
  
 <br/>
 
